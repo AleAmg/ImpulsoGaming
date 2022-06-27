@@ -4,32 +4,31 @@ import rowRight from "./../assets/icons/rowRight.svg";
 import rowLeft from "./../assets/icons/rowLeft.svg";
 const Carousel = () => {
   return (
-    <div>
+    <div className="carousel">
       <div className="contenedorSlideShow">
         <div className="slide">
           <a href="#xd">
-            <img src={img1} alt="img1"></img>
+            <img className="slide--img" src={img1} alt="img1"></img>
           </a>
           <div>
-            <p>Torneos free</p>
+            <p className="slide--text">Torneos free</p>
           </div>
         </div>
-        <div className="slide" >
+        <div className="slide">
           <a href="#xd">
-            <img src={img2} alt="img2"></img>
+            <img className="slide--img" src={img2} alt="img2"></img>
           </a>
           <div>
-            <p>Torneos free</p>
+            <p className="slide--text">Torneos free</p>
           </div>
         </div>
       </div>
-
-      <div>
-        <button>
-          <img src={rowLeft} alt="rowLeft"></img>
+      <div className="carousel__buttons">
+        <button className="carousel--button carousel--button--left">
+          <img className="carousel__row--icon" src={rowLeft} alt="rowLeft"></img>
         </button>
-        <button>
-          <img src={rowRight} alt="rowRight"></img>
+        <button className="carousel--button carousel--button--right">
+          <img className="carousel__row--icon" src={rowRight} alt="rowRight"></img>
         </button>
       </div>
     </div>
