@@ -8,6 +8,9 @@ $pink-gaming: #e5418e;
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 }
+body {
+  overflow: hidden;
+}
 .navbar {
   margin: 0;
 }
@@ -15,7 +18,6 @@ $pink-gaming: #e5418e;
   background-color: $pink-gaming;
   height: 85px;
   display: flex;
-
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -24,6 +26,7 @@ $pink-gaming: #e5418e;
 
 .navbar__contactMe--contacts {
   display: flex;
+  margin-left: 1%;
 }
 
 .navbar__contacts--icon {
@@ -36,6 +39,10 @@ $pink-gaming: #e5418e;
 
 .icon--contacts {
   height: 18px;
+}
+
+.navbar__contactMe--networks {
+  margin-right: 1%;
 }
 
 .icon--networks {
@@ -81,10 +88,12 @@ $pink-gaming: #e5418e;
 }
 
 .dropdown {
+  position: absolute;
   width: 90%;
-  margin: 0 auto;
   background-color: $pink-gaming;
+  left: 5%;
   text-align: center;
+  z-index: 200;
 }
 
 .dropdown__link {
@@ -123,10 +132,11 @@ $pink-gaming: #e5418e;
 .contenedorSlideShow {
   display: flex;
   flex-wrap: nowrap;
+  
 }
 .slide {
-  min-width: 100%;
   overflow: hidden;
+  min-width: 100%;
   transition: 0.3s ease all;
   z-index: 50;
   max-height: 500px;
@@ -185,9 +195,12 @@ $pink-gaming: #e5418e;
   }
 }
 
-
-
 @media (min-width: 768px) {
+  .navbar__contactMe {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 52px;
+  }
   .navbar__burger {
     display: none;
   }
