@@ -7,8 +7,6 @@ const Carousel = () => {
 
   const back = () => {
     if (slideShow.current.children.length > 0) {
-      console.log("back");
-
       const lastIndex = slideShow.current.children.length - 1;
 
       const lastElement = slideShow.current.children[lastIndex];
@@ -22,7 +20,7 @@ const Carousel = () => {
       slideShow.current.style.transform = `translateX(-${slideLength}px)`;
 
       setTimeout(() => {
-        slideShow.current.style.transition = "300ms ease-out all";
+        slideShow.current.style.transition = "500ms ease-out all";
         slideShow.current.style.transform = "translateX(0)";
       }, 30);
     }
@@ -32,7 +30,7 @@ const Carousel = () => {
     if (slideShow.current.children.length > 0) {
       const firstElement = slideShow.current.children[0];
 
-      slideShow.current.style.transition = "300ms ease-out all";
+      slideShow.current.style.transition = "500ms ease-out all";
 
       const slideLength = slideShow.current.children[0].offsetWidth;
 

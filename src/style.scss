@@ -132,7 +132,6 @@ body {
 .contenedorSlideShow {
   display: flex;
   flex-wrap: nowrap;
-  
 }
 .slide {
   overflow: hidden;
@@ -193,6 +192,49 @@ body {
     height: 50px;
     transition: 0.3s;
   }
+}
+
+.service {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 94%;
+  padding-top: 100px;
+}
+
+.service__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.service__title--border {
+  margin: 0 auto;
+  width: 90px;
+  margin-bottom: 80px;
+  border-bottom: 5px solid $purple-gaming;
+}
+
+.service__item {
+  margin-bottom: 30px;
+}
+
+.service__item--header {
+  display: flex;
+  margin: 10px 0;
+}
+
+.service__item--img {
+  width: 30px;
+  margin-right: 15px;
+}
+
+.service__item--title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 5px;
+  text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
