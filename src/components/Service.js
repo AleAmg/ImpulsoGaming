@@ -1,7 +1,7 @@
 import joystick from "./../assets/icons/joystick.svg";
 const Service = () => {
   return (
-    <div className="service">
+    <div className="service" id="services" >
       <h1 className="service__title">Our services</h1>
       <span className="title--border "></span>
       <div className="service__item__container">

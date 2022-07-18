@@ -8,7 +8,7 @@ import item6 from "./../assets/forOurPortfolio/item6.jpg";
 
 const OurPortfolio = () => {
   return (
-    <div className="ourPortfolio">
+    <div className="ourPortfolio" id="portfolio">
       <h1 className="ourPortfolio__title">Our Portfolio</h1>
       <span className="ourPortfolio__title--border"></span>
       <div className="ourPortfolio__images">

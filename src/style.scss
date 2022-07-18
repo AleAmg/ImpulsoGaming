@@ -25,6 +25,7 @@ $pink-gaming: #e5418e;
 .navbar__contactMe--contacts {
   display: flex;
   margin-left: 1%;
+  padding: 5px;
 }
 
 .navbar__contacts--icon {
@@ -92,6 +93,19 @@ $pink-gaming: #e5418e;
   left: 5%;
   text-align: center;
   z-index: 200;
+  overflow: hidden;
+  transition: 1s;
+
+  animation: dropdown-down 0.2s 1 linear;
+}
+
+@keyframes dropdown-down {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 230px;
+  }
 }
 
 .dropdown__link {
@@ -418,11 +432,10 @@ $pink-gaming: #e5418e;
   text-align: center;
   color: white;
   padding: 10px 0;
-  img {
-    display: none;
-    width: 100px;
-    object-fit: cover;
-  }
+}
+
+.footer__logo {
+  display: none;
 }
 
 .footer__contacts {
@@ -512,27 +525,29 @@ $pink-gaming: #e5418e;
   }
   .card__container {
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     max-width: 1200px;
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 15px;
   }
-  .card {
-    width: 345px;
-    margin: 0 20px 50px;
-  }
-  .footer__item{
+
+  .footer__item {
     text-align: center;
     flex-direction: row;
     justify-content: space-evenly;
-    img{
-      display: block;
-    }
-    
   }
-  .footer__contacts{
+
+  .footer__logo {
+    display: block;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  .footer__contacts {
     width: 225px;
   }
 }

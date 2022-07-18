@@ -90,11 +90,11 @@ const Navbar = () => {
               Contact
             </a>
           </div>
-          <div className="row__link">
+          {/* <div className="row__link">
             <a className="row__link--item" href="#external">
               External
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
       {drop && <Dropdown onClick={() => setDrop(false)} />}

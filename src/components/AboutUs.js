@@ -24,7 +24,7 @@ const arr = [
 
 const AboutUs = () => {
   return (
-    <div className="aboutUs">
+    <div className="aboutUs" id="about">
       <h1 className="aboutUs__title">About Us</h1>
       <span className="title--border"></span>
       <div className="aboutUs__header">

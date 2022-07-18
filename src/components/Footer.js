@@ -4,7 +4,7 @@ const Footer = () => {
     <div className="footer">
       <div className="footer__item">
         <div className="footer__contacts">
-          <img src={logo} alt="img"></img>
+          <img className="footer__logo" src={logo} alt="img"></img>
         </div>
         <div className="footer__contacts">
           <h1 className="footer__top--contacts">E-mail:</h1>

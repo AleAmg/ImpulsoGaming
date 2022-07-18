@@ -26,11 +26,11 @@ const Dropdown = () => {
           Contact
         </a>
       </div>
-      <div className="dropdown__link">
+      {/* <div className="dropdown__link">
         <a className="dropdown__link--item" href="#external">
           External
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };
